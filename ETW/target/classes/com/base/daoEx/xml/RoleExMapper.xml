@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.base.daoEx.RoleExMapper">
+    <resultMap id="BaseResultMap" type="com.base.daoEx.pojo.RoleEx" extends="com.base.dao.RoleMapper.BaseResultMap">
+        <collection property="permissions" ofType="com.base.dao.pojo.Permissions">
+            <id column="pid" property="id"/>
+            <result column="pname" property="name"/>
+        </collection>
+    </resultMap>
+
+    <select id="selectRoleExByRole" parameterType="com.base.dao.pojo.Role" resultMap="BaseResultMap">
+        SELECT * FROM e_role r LEFT JOIN
+        (SELECT p.`name` pname,p.id pid, rp.r_id r_id FROM e_role_permissions rp LEFT JOIN e_permissions p ON rp.r_id =
+        p.id)
+        r_rp ON r.id = r_rp.r_id
+        WHERE r.id = #{id}
+    </select>
+</mapper>
