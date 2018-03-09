@@ -75,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aboutUs.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="aboutUs.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/manager/aboutUs.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -194,6 +194,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Datagrid.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/base/Bean/Datagrid.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="aboutUs.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/manager/aboutUs.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -220,45 +230,6 @@
             <state relative-caret-position="1065">
               <caret line="71" column="42" lean-forward="false" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reportPage.es6" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/manager/lib/reportPage.es6">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" column="20" lean-forward="false" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-              <folding>
-                <marker date="1520600809368" expanded="true" signature="101:205" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="101:3214" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="131:205" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="339:1386" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="522:550" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="573:637" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="660:779" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="806:917" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="944:1017" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="1039:1372" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="1130:1349" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="1404:1732" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="1595:1630" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="1775:1852" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="1775:2175" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="1893:1911" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="1912:1915" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="1912:2022" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="2067:2162" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="2207:3204" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="2337:2962" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="2399:2955" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="2429:2567" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="2519:2531" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="2597:2778" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="2808:2944" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="2887:2926" ph="..." />
-                <marker date="1520600809368" expanded="true" signature="3007:3191" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -928,12 +899,12 @@
       <workItem from="1520474562379" duration="23454000" />
       <workItem from="1520556849696" duration="25758000" />
       <workItem from="1520590984597" duration="10739000" />
-      <workItem from="1520607372871" duration="122000" />
+      <workItem from="1520607372871" duration="166000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152564000" />
+    <option name="totallyTimeSpent" value="152608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-32" y="23" width="1264" height="745" extended-state="0" />
@@ -1030,17 +1001,6 @@
             <marker date="1520564394223" expanded="true" signature="3267:3504" ph="update e_report... " />
             <marker date="1520564394223" expanded="true" signature="3598:3727" ph="update e_report... " />
             <marker date="1520564394223" expanded="true" signature="4046:4151" ph="select from e_report" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/Bean/Datagrid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#507#508#0" expanded="false" />
-            <element signature="e#535#536#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1569,6 +1529,14 @@
             <element signature="e#9979#10044#0" expanded="false" />
             <element signature="e#10055#10120#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/base/Bean/Datagrid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
