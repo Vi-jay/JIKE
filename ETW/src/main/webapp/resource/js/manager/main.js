@@ -60,11 +60,19 @@ require(['routerConfig', 'ZeroClipboard'], function (router, ZeroClipboard) {
                     case "leftToggle":
                         this.leftToggle = !this.leftToggle;
                         break;
-
+                    case "save":
+                        this.checkSave();
+                        break;
                 }
             },
             checkSave: function () {
-                this.dialogVisible = true;
+                if(this.editableTabs.length){
+                this.dialogVisible = true;}else {
+                    this.$message({
+                        message:"请先打开编辑页面!",
+                        type:"error"
+                    })
+                }
             },
             saveDoc: function () {
                 this.dialogVisible = false;
@@ -96,9 +104,7 @@ require(['routerConfig', 'ZeroClipboard'], function (router, ZeroClipboard) {
             },
             mainModuleTap: function (tag) {
                 switch (tag) {
-                    case "save":
-                        this.checkSave();
-                        break;
+
                     case "case":
                         this.showCasePage();
                         break;

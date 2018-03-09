@@ -91,7 +91,7 @@ define(function () {
                     id: this.dialogForm.id,
                     state: this.dialogForm.state,
                     reportHtml: this.editor.getAllHtml(),
-                    reportText: this.editor.getPlainTxt()
+                    reportText: this.editor.getContentTxt()
                 }).then(function (res) {
                     if (+res.data.code === 200) {
                         _this4.$message({
@@ -114,7 +114,7 @@ define(function () {
                     date: this.dialogForm.date,
                     state: this.dialogForm.state,
                     reportHtml: this.editor.getAllHtml(),
-                    reportText: this.editor.getPlainTxt()
+                    reportText: this.editor.getContentTxt()
                 }).then(function (res) {
                     if (+res.data.code === 200) {
                         _this5.$message({

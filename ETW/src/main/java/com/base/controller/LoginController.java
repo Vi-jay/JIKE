@@ -120,7 +120,7 @@ public class LoginController {
     @RequestMapping("logout")
     public String logout(HttpServletRequest request) {
         SecurityUtils.getSubject().logout();
-        return InternalResourceViewResolver.REDIRECT_URL_PREFIX + "/";
+        return InternalResourceViewResolver.REDIRECT_URL_PREFIX + "main";
     }/**
      * 主页
      */

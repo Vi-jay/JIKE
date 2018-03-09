@@ -13,6 +13,7 @@
     <script src="${path}/resource/js/require.js" defer async="async"
             data-main="${path}/resource/js/manager/main"></script>
     <link rel="stylesheet" href="${path}/resource/css/manager/main.css">
+    <link rel="stylesheet" href="${path}/resource/css/manager/aboutUs.css">
     <style>
         .left-el-menu-vertical:not(.el-menu--collapse) {
             width: 200px;
@@ -44,18 +45,14 @@
                 background-color="#5A626A"
                 text-color="#fff"
                 active-text-color="#ffd04b">
-            <el-menu-item index="5">退出系统</el-menu-item>
-            <el-menu-item index="4">处理中心</el-menu-item>
-            <el-submenu index="3">
-                <template slot="title">我的工作台</template>
-                <el-menu-item index="2-1">选项1</el-menu-item>
-                <el-menu-item index="2-2">选项2</el-menu-item>
-                <el-menu-item index="2-3">选项3</el-menu-item>
-            </el-submenu>
+            <el-menu-item index="layout"><a href="${path}/manager/logout">退出系统</a></el-menu-item>
+            <el-menu-item index="1"><a href="${path}" target="_blank">关于我们</a></el-menu-item>
             <el-menu-item index="2" disabled>消息中心</el-menu-item>
-            <el-menu-item index="1"><a href="https://www.ele.me" target="_blank">关于我们</a></el-menu-item>
+            <el-menu-item index="4">处理中心</el-menu-item>
+            <el-menu-item index="save">
+                <span slot="title"><i class="el-icon-upload"></i>上传当前页</span>
+            </el-menu-item>
             <el-menu-item index="leftToggle">{{!leftToggle?'显示':'隐藏'}}侧栏</el-menu-item>
-
         </el-menu>
     </div>
 
@@ -104,16 +101,13 @@
                 <i class="el-icon-setting"></i>
                 <span slot="title">设置</span>
             </el-menu-item>
-            <el-menu-item index="save">
-                <i class="el-icon-upload"></i>
-                <span slot="title">保存当前页</span>
-            </el-menu-item>
+
         </el-menu>
     </div>
 
     </el-collapse-transition>
 
-    <article style="width: 100% ;height:calc(100% - 65px);margin-top: 65px;">
+    <article style="width: 100% ;height:calc(100% - 65px);margin-top: 61px;">
         <template v-if="!isEditPage">
             <router-view></router-view>
         </template>
@@ -126,6 +120,8 @@
                         :label="item.title"
                         :name="item.name"
                         v-loading="loading"
+                        element-loading-text="拼命加载中"
+                        element-loading-spinner="el-icon-loading"
                 >
                     <script :id="'editor-'+item.timeStemp" :name="'content'+index" type="text/plain">
                  请开始你的表演

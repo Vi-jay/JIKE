@@ -31,7 +31,8 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="${path}"><img src="${path}/resource/css/index_files/etw-logo-white.png" alt=""></a>
+                            <a class="navbar-brand" href="${path}"><img
+                                    src="${path}/resource/css/index_files/etw-logo-white.png" alt=""></a>
                         </div>
                         <div class="navbar-collapse collapse" id="topmenu" aria-expanded="false" style="height: 1px;">
                             <ul class="nav navbar-nav navbar-right">
@@ -101,7 +102,7 @@
                 <div class="col-xs-12 col-sm-3 col-lg-2 col-lg-offset-1"><h4>即客产品介绍</h4>
                     <ul class="list-unstyled toggle-footer" style="">
                         <li><a href="${path}/client/page/sevensetlayerSelf">即客营销</a></li>
-                        <li><a  href="#">即客管理</a></li>
+                        <li><a href="#">即客管理</a></li>
                         <li><a href="${path}/client/page/cloud">即客云数据</a></li>
                     </ul>
                 </div>
@@ -153,7 +154,7 @@
                     }
                 }
                 arr.forEach(function (num) {
-                    str = str.replace(num+"","<em class='mark-red'>"+num+"</em>");
+                    str = str.replace(num + "", "<em class='mark-red'>" + num + "</em>");
                 });
                 return str;
             }

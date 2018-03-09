@@ -184,7 +184,7 @@ ref="multipleTable"
                     id: this.dialogForm.id,
                     state: this.dialogForm.state,
                     reportHtml: this.editor.getAllHtml(),
-                    reportText: this.editor.getPlainTxt(),
+                    reportText: this.editor.getContentTxt(),
                 }).then(res => {
                     if (+res.data.code === 200) {
                         this.$message({
@@ -203,7 +203,7 @@ ref="multipleTable"
                     date: this.dialogForm.date,
                     state: this.dialogForm.state,
                     reportHtml: this.editor.getAllHtml(),
-                    reportText: this.editor.getPlainTxt(),
+                    reportText: this.editor.getContentTxt(),
                 }).then(res => {
                     if (+res.data.code === 200) {
                         this.$message({

@@ -91,6 +91,8 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<script src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("/resource/js/utils.js\"></script>\n");
+      out.write("<script src=\"http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js\"></script>\n");
+      out.write("\n");
       out.write("<script>\n");
       out.write("    var sy = sy || {};\n");
       out.write("    sy.contextPath = '");
@@ -109,7 +111,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        if (iframe) {\n");
       out.write("            var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;\n");
       out.write("            if (iframeWin.document.body) {\n");
-      out.write("                iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;\n");
+      out.write("                iframe.height = iframeWin.document.documentElement.offsetHeight || iframeWin.document.body.offsetHeight;\n");
       out.write("            }\n");
       out.write("        }\n");
       out.write("    };\n");
@@ -126,7 +128,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<body>\n");
       out.write("<div id=\"app\">\n");
       out.write("    <div class=\"login\">\n");
-      out.write("        <h2 class=\"title\">Login to etw</h2>\n");
+      out.write("        <h2 class=\"title\">Login To JIKE</h2>\n");
       out.write("        <div class=\"content\">\n");
       out.write("            <form action=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));

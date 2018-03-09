@@ -79,14 +79,17 @@ public class ClientController {
     @RequestMapping(value = "report", method = RequestMethod.GET)
     public String showReport(ModelMap modelMap) {
         List<ReportWithBLOBs> reports = clientService.selectReportsListAndPage(0, 0).getRows();
+        int impSize = 0;
         Map<Integer,String> reportTimes  = new HashMap<Integer, String>();
         for (ReportWithBLOBs report:reports) {
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy年MM月dd日");
             String dateString  = dateFormat.format(report.getDate());
             reportTimes.put(report.getId(),dateString);
+            if (report.getState()==1)impSize++;
         }
         modelMap.addAttribute("reportList", reports);
         modelMap.addAttribute("reportTimes", reportTimes);
+
         return "client/report";
     }
 @RequestMapping(value = "report/{path}", method = RequestMethod.GET)

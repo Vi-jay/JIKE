@@ -36,15 +36,15 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="https://www.即客service.com/"><img
+                            <a class="navbar-brand" href="${path}"><img
                                     src="${path}/resource/css/index_files/etw-logo-white.png" alt=""></a>
                         </div>
                         <div class="navbar-collapse collapse" id="topmenu" aria-expanded="false" style="height: 1px;">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="https://www.即客service.com/">即客首页</a></li>
-                                <li><a href="https://www.即客service.com/marketing.html">即客产品介绍</a></li>
-                                <li><a href="https://www.即客service.com/sevensetlayer_self.htm">关于即客</a></li>
-                                <li><a href="https://www.即客service.com/ninesetlayer_self.htm">联系即客</a></li>
+                                <li><a href="${path}">即客首页</a></li>
+                                <li><a href="${path}/client/page/marketing">即客产品介绍</a></li>
+                                <li><a href="${path}/client/page/sevensetlayerSelf">关于即客</a></li>
+                                <li><a href="${path}/client/page/concat">联系即客</a></li>
                             </ul>
                         </div>
                     </div>
@@ -56,10 +56,10 @@
         <div class="container">
             <ul class="etw_submenu">
                 <li class="mainsub">关于即客</li>
-                <li><a href="/sevensetlayer_self.htm">公司介绍</a></li>
-                <li><a href="/sevensetlayer_self.htm" >选择即客的理由</a></li>
-                <li><a href="/sevensetlayer_self.htm" >即客视角</a></li>
-                <li><a href="/thsetlayer_self.htm" class="active">市场分析</a></li>
+                <li><a href="${path}/client/page/sevensetlayerSelf">公司介绍</a></li>
+                <li><a href="${path}/client/page/thsetlayerSelf">选择即客的理由</a></li>
+                <li><a href="${path}/client/page/talking">即客视角</a></li>
+                <li><a href="#" class="active">市场分析</a></li>
             </ul>
         </div>
     </div>
@@ -67,12 +67,10 @@
 
 <div class="clear">
 </div>
-
-<div class="content-wrapper" style="min-height: 60%;width: 100%;padding: 120px 0 0 0">
+<div id="app" class="article-content-wrapper"  v-loading="loading">
     <iframe src="${path}/editor/searchPage/6" frameborder="0" id="articleContent"
             style="width: 100%;overflow:hidden;"></iframe>
 </div>
-
 <footer>
     <div class="footer-wrap">
         <div class="container">
@@ -90,7 +88,7 @@
                 <div class="col-xs-12 col-sm-3 col-lg-2 col-lg-offset-1"><h4>即客产品介绍</h4>
                     <ul class="list-unstyled toggle-footer" style="">
                         <li><a href="${path}/client/page/sevensetlayerSelf">即客营销</a></li>
-                        <li><a  href="#">即客管理</a></li>
+                        <li><a href="#">即客管理</a></li>
                         <li><a href="${path}/client/page/cloud">即客云数据</a></li>
                     </ul>
                 </div>
@@ -123,5 +121,6 @@
 </footer>
 <div class="clear">
 </div>
+<script src="${path}/resource/js/client/main.js"></script>
 </body>
 </html>

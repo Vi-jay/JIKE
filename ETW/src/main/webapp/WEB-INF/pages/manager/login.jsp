@@ -15,7 +15,7 @@
 <body>
 <div id="app">
     <div class="login">
-        <h2 class="title">Login to etw</h2>
+        <h2 class="title">Login To JIKE</h2>
         <div class="content">
             <form action="${path}/manager/login" method="post">
                 <div class="container">

@@ -156,7 +156,8 @@ public final class talking_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            </button>\n");
       out.write("                            <a class=\"navbar-brand\" href=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("\"><img src=\"");
+      out.write("\"><img\n");
+      out.write("                                    src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("/resource/css/index_files/etw-logo-white.png\" alt=\"\"></a>\n");
       out.write("                        </div>\n");
@@ -187,10 +188,11 @@ public final class talking_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<div class=\"clear\">\n");
       out.write("</div>\n");
       out.write("\n");
-      out.write("<div class=\"content-wrapper\" style=\"min-height: 60%;width: 100%;padding: 120px 0 0 0\">\n");
+      out.write("<div id=\"app\" class=\"article-content-wrapper\" v-loading=\"loading\">\n");
       out.write("    <iframe src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/editor/searchPage/1\" frameborder=\"0\" id=\"articleContent\" style=\"width: 100%;overflow:hidden;padding: 0 16%\"></iframe>\n");
+      out.write("/editor/searchPage/1\" frameborder=\"0\" id=\"articleContent\"\n");
+      out.write("            style=\"width: 100%;overflow:hidden;padding: 0 16%\"></iframe>\n");
       out.write("</div>\n");
       out.write("\n");
       out.write("<footer>\n");
@@ -224,7 +226,7 @@ public final class talking_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <li><a href=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("/client/page/sevensetlayerSelf\">即客营销</a></li>\n");
-      out.write("                        <li><a  href=\"#\">即客管理</a></li>\n");
+      out.write("                        <li><a href=\"#\">即客管理</a></li>\n");
       out.write("                        <li><a href=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("/client/page/cloud\">即客云数据</a></li>\n");
@@ -261,6 +263,10 @@ public final class talking_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</footer>\n");
       out.write("<div class=\"clear\">\n");
       out.write("</div>\n");
+      out.write("<script src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/resource/js/client/main.js\"></script>\n");
+      out.write("\n");
       out.write("</body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {

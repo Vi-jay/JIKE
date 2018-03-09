@@ -18,6 +18,7 @@ public final class report_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_forEach_var_items;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_set_var_value_nobody;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_forEach_varStatus_var_items;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_if_test;
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -29,12 +30,14 @@ public final class report_jsp extends org.apache.jasper.runtime.HttpJspBase
   public void _jspInit() {
     _jspx_tagPool_c_forEach_var_items = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_c_set_var_value_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_c_forEach_varStatus_var_items = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_c_if_test = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
   }
 
   public void _jspDestroy() {
     _jspx_tagPool_c_forEach_var_items.release();
     _jspx_tagPool_c_set_var_value_nobody.release();
+    _jspx_tagPool_c_forEach_varStatus_var_items.release();
     _jspx_tagPool_c_if_test.release();
   }
 
@@ -165,17 +168,27 @@ public final class report_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                <span class=\"icon-bar\"></span>\n");
       out.write("                                <span class=\"icon-bar\"></span>\n");
       out.write("                            </button>\n");
-      out.write("                            <a class=\"navbar-brand\" href=\"https://www.即客service.com/\"><img\n");
+      out.write("                            <a class=\"navbar-brand\" href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\"><img\n");
       out.write("                                    src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("/resource/css/index_files/etw-logo-white.png\" alt=\"\"></a>\n");
       out.write("                        </div>\n");
       out.write("                        <div class=\"navbar-collapse collapse\" id=\"topmenu\" aria-expanded=\"false\" style=\"height: 1px;\">\n");
       out.write("                            <ul class=\"nav navbar-nav navbar-right\">\n");
-      out.write("                                <li><a href=\"https://www.即客service.com/\">即客首页</a></li>\n");
-      out.write("                                <li><a href=\"https://www.即客service.com/marketing.html\">即客产品介绍</a></li>\n");
-      out.write("                                <li><a href=\"https://www.即客service.com/sevensetlayer_self.htm\">关于即客</a></li>\n");
-      out.write("                                <li><a href=\"https://www.即客service.com/ninesetlayer_self.htm\">联系即客</a></li>\n");
+      out.write("                                <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\">即客首页</a></li>\n");
+      out.write("                                <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/client/page/marketing\">即客产品介绍</a></li>\n");
+      out.write("                                <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/client/page/sevensetlayerSelf\">关于即客</a></li>\n");
+      out.write("                                <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/client/page/concat\">联系即客</a></li>\n");
       out.write("                            </ul>\n");
       out.write("                        </div>\n");
       out.write("                    </div>\n");
@@ -196,7 +209,7 @@ public final class report_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<div class=\"clear\">\n");
       out.write("</div>\n");
       out.write("\n");
-      out.write("<div class=\"content-wrapper\" style=\"min-height: 100%;width: 100%;padding: 150px 0 15% 15%\">\n");
+      out.write("<div class=\"content-wrapper\" style=\"min-height: 100%;width: 100%;padding: 150px 0 15% 15%\" id=\"app\">\n");
       out.write("    <div class=\"col-sm-3\">\n");
       out.write("        <div class=\"left\">\n");
       out.write("            <div class=\"leftbar\">\n");
@@ -256,33 +269,51 @@ public final class report_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <div class=\"row\">\n");
       out.write("                <div class=\"col-xs-12 col-sm-3 col-lg-2 col-lg-offset-1\"><h4>关于即客</h4>\n");
       out.write("                    <ul class=\"list-unstyled toggle-footer\" style=\"\">\n");
-      out.write("                        <li><a href=\"https://www.即客service.com/sevensetlayer_self.htm\">公司介绍</a></li>\n");
-      out.write("                        <li><a href=\"https://www.即客service.com/thsetlayer_self.htm\">选择即客的理由</a></li>\n");
-      out.write("                        <li><a href=\"https://www.即客service.com/talking.html\">即客视角</a></li>\n");
-      out.write("                        <li><a href=\"https://www.即客service.com/即客speak/report.html\">公司动态</a></li>\n");
-      out.write("                        <li><a href=\"https://www.即客service.com/market_analysis.html\">国际市场分析</a></li>\n");
-      out.write("                        <li><a href=\"https://www.即客service.com/congratulate.html\">网络布局</a></li>\n");
+      out.write("                        <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/client/page/sevensetlayerSelf\">公司介绍</a></li>\n");
+      out.write("                        <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/client/page/thsetlayerSelf\">选择即客的理由</a></li>\n");
+      out.write("                        <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/client/page/talking\">即客视角</a></li>\n");
+      out.write("                        <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/client/report\">公司动态</a></li>\n");
+      out.write("                        <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/client/page/marketAnalysis\">国际市场分析</a></li>\n");
+      out.write("                        <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/client/page/networkLayout\">网络布局</a></li>\n");
       out.write("                    </ul>\n");
       out.write("                </div>\n");
       out.write("                <div class=\"col-xs-12 col-sm-3 col-lg-2 col-lg-offset-1\"><h4>即客产品介绍</h4>\n");
       out.write("                    <ul class=\"list-unstyled toggle-footer\" style=\"\">\n");
-      out.write("                        <li><a href=\"https://www.即客service.com/advertising.html\">即客营销</a></li>\n");
-      out.write("                        <li><a target=\"_blank\" href=\"http://www.即客cloudtv.com/\">即客管理</a></li>\n");
-      out.write("                        <li><a href=\"https://www.即客service.com/cloud\">即客云数据</a></li>\n");
+      out.write("                        <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/client/page/sevensetlayerSelf\">即客营销</a></li>\n");
+      out.write("                        <li><a href=\"#\">即客管理</a></li>\n");
+      out.write("                        <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/client/page/cloud\">即客云数据</a></li>\n");
       out.write("                    </ul>\n");
       out.write("                </div>\n");
       out.write("                <div class=\"col-xs-12 col-sm-3 col-lg-2 col-lg-offset-1\"><h4>客户相关</h4>\n");
       out.write("                    <ul class=\"list-unstyled toggle-footer\" style=\"\">\n");
-      out.write("                        <li><a href=\"https://www.即客service.com/case\">客户效果验证</a></li>\n");
-      out.write("                        <li><a href=\"https://www.即客service.com/buyer\">即客大数据实况</a></li>\n");
+      out.write("                        <li><a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/client/page/case\">客户效果验证</a></li>\n");
+      out.write("                        <li><a href=\"#\">即客大数据实况</a></li>\n");
       out.write("                        <li>\n");
-      out.write("                            <a href=\"https://www.即客service.com/multilingual_text.html?action=open#denglubox\">申请使用即客云SASS系统</a>\n");
+      out.write("                            <a href=\"#\">申请使用即客云SASS系统</a>\n");
       out.write("                        </li>\n");
       out.write("                    </ul>\n");
       out.write("                </div>\n");
       out.write("                <div class=\"col-xs-12 col-sm-3 col-lg-2 col-lg-offset-1\"><h4>联系即客</h4>\n");
       out.write("                    <ul class=\"list-unstyled toggle-footer\" style=\"\">\n");
-      out.write("                        <li><a href=\"https://www.即客service.com/ninesetlayer_self.htm\">即客江苏</a></li>\n");
+      out.write("                        <li><a href=\"#\">即客江苏</a></li>\n");
       out.write("                    </ul>\n");
       out.write("                </div>\n");
       out.write("            </div>\n");
@@ -315,12 +346,33 @@ public final class report_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        };\n");
       out.write("\n");
       out.write("\n");
-      out.write("        $('#etw_report_left ul li a[href^=\"#\"]').click(function (e) {\n");
-      out.write("            e.preventDefault();\n");
-      out.write("            console.log($(this.hash).offset().top);\n");
-      out.write("            $('html, body').animate({scrollTop: $(this.hash).offset().top-200}, 400);\n");
-      out.write("        });\n");
+      out.write("\n");
       out.write("    })();\n");
+      out.write("    new Vue({\n");
+      out.write("        el: \"#app\",\n");
+      out.write("        data: {\n");
+      out.write("            loadingAnyMap: []\n");
+      out.write("        },\n");
+      out.write("        created: function () {\n");
+      out.write("            for (var anyI = 0; anyI <");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${reportList.size()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("; anyI++) {\n");
+      out.write("                this.loadingAnyMap[anyI] = {loading: true};\n");
+      out.write("            }\n");
+      out.write("            this.$nextTick(function () {\n");
+      out.write("                $('#etw_report_left ul li a[href^=\"#\"]').click(function (e) {\n");
+      out.write("                    e.preventDefault();\n");
+      out.write("                    console.log($(this.hash).offset().top);\n");
+      out.write("                    $('html, body').animate({scrollTop: $(this.hash).offset().top - 200}, 400);\n");
+      out.write("                });\n");
+      out.write("            })\n");
+      out.write("        },\n");
+      out.write("        methods: {\n");
+      out.write("            closeLoading: function (index) {\n");
+      out.write("                Vue.set(this.loadingAnyMap,index,{loading:false});\n");
+      out.write("            }\n");
+      out.write("        }\n");
+      out.write("    })\n");
       out.write("</script>\n");
       out.write("</body>\n");
       out.write("</html>\n");
@@ -403,11 +455,12 @@ public final class report_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  c:forEach
-    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_1 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_1 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_varStatus_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_forEach_1.setPageContext(_jspx_page_context);
     _jspx_th_c_forEach_1.setParent(null);
     _jspx_th_c_forEach_1.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${reportList}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
     _jspx_th_c_forEach_1.setVar("report");
+    _jspx_th_c_forEach_1.setVarStatus("status");
     int[] _jspx_push_body_count_c_forEach_1 = new int[] { 0 };
     try {
       int _jspx_eval_c_forEach_1 = _jspx_th_c_forEach_1.doStartTag();
@@ -433,7 +486,7 @@ public final class report_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_th_c_forEach_1.doCatch(_jspx_exception);
     } finally {
       _jspx_th_c_forEach_1.doFinally();
-      _jspx_tagPool_c_forEach_var_items.reuse(_jspx_th_c_forEach_1);
+      _jspx_tagPool_c_forEach_varStatus_var_items.reuse(_jspx_th_c_forEach_1);
     }
     return false;
   }
@@ -451,18 +504,27 @@ public final class report_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_c_if_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n");
-        out.write("                        <li class=\"alletwnew\" style=\"min-height: 150px\">\n");
+        out.write("                        <li class=\"alletwnew\" style=\"min-height: 150px\"\n");
+        out.write("                            v-loading=\"loadingAnyMap[");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${status.index}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+        out.write("].loading\"\n");
+        out.write("                            element-loading-text=\"拼命加载中\"\n");
+        out.write("                            element-loading-spinner=\"el-icon-loading\"\n");
+        out.write("                        >\n");
         out.write("                            <div class=\"published-date\"><a id=\"");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${report.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
         out.write("\"></a>");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${reportTimes.get(report.id)}", java.lang.String.class, (PageContext)_jspx_page_context, null));
         out.write("</div>\n");
         out.write("                            <div class=\"etw_question_con\">\n");
-        out.write("                                <iframe src=\"");
+        out.write("                                <iframe @load=\"closeLoading(");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${status.index}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+        out.write(")\" src=\"");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
         out.write("/client/report/");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${report.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-        out.write("\" class=\"report-iframe\"\n");
+        out.write("\"\n");
+        out.write("                                        class=\"report-iframe\"\n");
         out.write("                                        style=\"width: 100%;\" frameborder=\"0\"></iframe>\n");
         out.write("                            </div>\n");
         out.write("                        </li>\n");
@@ -485,11 +547,12 @@ public final class report_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  c:forEach
-    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_2 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_2 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_varStatus_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_forEach_2.setPageContext(_jspx_page_context);
     _jspx_th_c_forEach_2.setParent(null);
     _jspx_th_c_forEach_2.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${reportList}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
     _jspx_th_c_forEach_2.setVar("report");
+    _jspx_th_c_forEach_2.setVarStatus("status");
     int[] _jspx_push_body_count_c_forEach_2 = new int[] { 0 };
     try {
       int _jspx_eval_c_forEach_2 = _jspx_th_c_forEach_2.doStartTag();
@@ -515,7 +578,7 @@ public final class report_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_th_c_forEach_2.doCatch(_jspx_exception);
     } finally {
       _jspx_th_c_forEach_2.doFinally();
-      _jspx_tagPool_c_forEach_var_items.reuse(_jspx_th_c_forEach_2);
+      _jspx_tagPool_c_forEach_varStatus_var_items.reuse(_jspx_th_c_forEach_2);
     }
     return false;
   }
@@ -533,14 +596,23 @@ public final class report_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_c_if_1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n");
-        out.write("                        <li class=\"alletwnew\" style=\"min-height: 150px\">\n");
+        out.write("                        <li class=\"alletwnew\" style=\"min-height: 150px\"\n");
+        out.write("                            v-loading=\"loadingAnyMap[");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${status.index}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+        out.write("].loading\"\n");
+        out.write("                            element-loading-text=\"拼命加载中\"\n");
+        out.write("                            element-loading-spinner=\"el-icon-loading\"\n");
+        out.write("                        >\n");
         out.write("                            <div class=\"published-date\"><a id=\"");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${report.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
         out.write("\"></a>");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${reportTimes.get(report.id)}", java.lang.String.class, (PageContext)_jspx_page_context, null));
         out.write("</div>\n");
         out.write("                            <div class=\"etw_question_con\">\n");
-        out.write("                                <iframe class=\"report-iframe\" src=\"");
+        out.write("                                <iframe @load=\"closeLoading(");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${status.index}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+        out.write(")\" class=\"report-iframe\"\n");
+        out.write("                                        src=\"");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
         out.write("/client/report/");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${report.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));

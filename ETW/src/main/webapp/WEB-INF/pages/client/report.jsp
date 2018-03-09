@@ -41,15 +41,15 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="https://www.即客service.com/"><img
+                            <a class="navbar-brand" href="${path}"><img
                                     src="${path}/resource/css/index_files/etw-logo-white.png" alt=""></a>
                         </div>
                         <div class="navbar-collapse collapse" id="topmenu" aria-expanded="false" style="height: 1px;">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="https://www.即客service.com/">即客首页</a></li>
-                                <li><a href="https://www.即客service.com/marketing.html">即客产品介绍</a></li>
-                                <li><a href="https://www.即客service.com/sevensetlayer_self.htm">关于即客</a></li>
-                                <li><a href="https://www.即客service.com/ninesetlayer_self.htm">联系即客</a></li>
+                                <li><a href="${path}">即客首页</a></li>
+                                <li><a href="${path}/client/page/marketing">即客产品介绍</a></li>
+                                <li><a href="${path}/client/page/sevensetlayerSelf">关于即客</a></li>
+                                <li><a href="${path}/client/page/concat">联系即客</a></li>
                             </ul>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
 <div class="clear">
 </div>
 
-<div class="content-wrapper" style="min-height: 100%;width: 100%;padding: 150px 0 15% 15%">
+<div class="content-wrapper" style="min-height: 100%;width: 100%;padding: 150px 0 15% 15%" id="app">
     <div class="col-sm-3">
         <div class="left">
             <div class="leftbar">
@@ -98,12 +98,17 @@
             <h2 class="import-news"><em class="btn-left">重要新闻</em></h2>
             <%--重要新闻--%>
             <ul>
-                <c:forEach items="${reportList}" var="report">
+                <c:forEach items="${reportList}" var="report" varStatus="status">
                     <c:if test="${report.state == 1}">
-                        <li class="alletwnew" style="min-height: 150px">
+                        <li class="alletwnew" style="min-height: 150px"
+                            v-loading="loadingAnyMap[${status.index}].loading"
+                            element-loading-text="拼命加载中"
+                            element-loading-spinner="el-icon-loading"
+                        >
                             <div class="published-date"><a id="${report.id}"></a>${reportTimes.get(report.id)}</div>
                             <div class="etw_question_con">
-                                <iframe src="${path}/client/report/${report.id}" class="report-iframe"
+                                <iframe @load="closeLoading(${status.index})" src="${path}/client/report/${report.id}"
+                                        class="report-iframe"
                                         style="width: 100%;" frameborder="0"></iframe>
                             </div>
                         </li>
@@ -115,12 +120,17 @@
             <h2 class="import-news-title">随时动态新闻</h2>
             <%--随时--%>
             <ul>
-                <c:forEach items="${reportList}" var="report">
+                <c:forEach items="${reportList}" var="report" varStatus="status">
                     <c:if test="${report.state == 0}">
-                        <li class="alletwnew" style="min-height: 150px">
+                        <li class="alletwnew" style="min-height: 150px"
+                            v-loading="loadingAnyMap[${status.index}].loading"
+                            element-loading-text="拼命加载中"
+                            element-loading-spinner="el-icon-loading"
+                        >
                             <div class="published-date"><a id="${report.id}"></a>${reportTimes.get(report.id)}</div>
                             <div class="etw_question_con">
-                                <iframe class="report-iframe" src="${path}/client/report/${report.id}"
+                                <iframe @load="closeLoading(${status.index})" class="report-iframe"
+                                        src="${path}/client/report/${report.id}"
                                         style="width: 100%;" frameborder="0"></iframe>
                             </div>
                         </li>
@@ -152,7 +162,7 @@
                 <div class="col-xs-12 col-sm-3 col-lg-2 col-lg-offset-1"><h4>即客产品介绍</h4>
                     <ul class="list-unstyled toggle-footer" style="">
                         <li><a href="${path}/client/page/sevensetlayerSelf">即客营销</a></li>
-                        <li><a  href="#">即客管理</a></li>
+                        <li><a href="#">即客管理</a></li>
                         <li><a href="${path}/client/page/cloud">即客云数据</a></li>
                     </ul>
                 </div>
@@ -200,12 +210,31 @@
         };
 
 
-        $('#etw_report_left ul li a[href^="#"]').click(function (e) {
-            e.preventDefault();
-            console.log($(this.hash).offset().top);
-            $('html, body').animate({scrollTop: $(this.hash).offset().top-200}, 400);
-        });
+
     })();
+    new Vue({
+        el: "#app",
+        data: {
+            loadingAnyMap: []
+        },
+        created: function () {
+            for (var anyI = 0; anyI <${reportList.size()}; anyI++) {
+                this.loadingAnyMap[anyI] = {loading: true};
+            }
+            this.$nextTick(function () {
+                $('#etw_report_left ul li a[href^="#"]').click(function (e) {
+                    e.preventDefault();
+                    console.log($(this.hash).offset().top);
+                    $('html, body').animate({scrollTop: $(this.hash).offset().top - 200}, 400);
+                });
+            })
+        },
+        methods: {
+            closeLoading: function (index) {
+                Vue.set(this.loadingAnyMap,index,{loading:false});
+            }
+        }
+    })
 </script>
 </body>
 </html>

@@ -58,7 +58,7 @@
 <div class="clear">
 </div>
 
-<div class="content-wrapper" style="min-height: 60%;width: 100%;padding: 120px 0 0 0">
+<div id="app" class="article-content-wrapper" v-loading="loading">
     <iframe src="${path}/editor/searchPage/8" frameborder="0" id="articleContent"
             style="width: 100%;overflow:hidden;transform: scale(0.9)"></iframe>
 </div>
@@ -80,7 +80,7 @@
                 <div class="col-xs-12 col-sm-3 col-lg-2 col-lg-offset-1"><h4>即客产品介绍</h4>
                     <ul class="list-unstyled toggle-footer" style="">
                         <li><a href="${path}/client/page/sevensetlayerSelf">即客营销</a></li>
-                        <li><a  href="#">即客管理</a></li>
+                        <li><a href="#">即客管理</a></li>
                         <li><a href="${path}/client/page/cloud">即客云数据</a></li>
                     </ul>
                 </div>
@@ -113,5 +113,7 @@
 </footer>
 <div class="clear">
 </div>
+<script src="${path}/resource/js/client/main.js"></script>
+
 </body>
 </html>

@@ -200,6 +200,7 @@
                'p': {$:{}},
                'br':{$:{}},
                'div':{'$':{}},
+               'style':"",
                'li':{'$':{}},
                'button':"",
                'caption':transP,
@@ -401,7 +402,7 @@
 
         //tableDragable
         //表格是否可以拖拽
-        ,tableDragable: true
+        // ,tableDragable: true
 
 
         //sourceEditor
@@ -447,7 +448,7 @@
         // xss 过滤是否开启,inserthtml等操作
         xssFilterRules: true
         //input xss过滤
-        , inputXssFilter: false
+        , inputXssFilter: true
         //output xss过滤
         , outputXssFilter: true
         // xss过滤白名单 名单来源: https://raw.githubusercontent.com/leizongmin/js-xss/master/lib/default.js
@@ -501,6 +502,7 @@
             s: [],
             section: [],
             small: [],
+            style:[],
             span: ['class', 'style'],
             sub: ['class', 'style'],
             sup: ['class', 'style'],

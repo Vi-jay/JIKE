@@ -1,8 +1,8 @@
-UE.registerUI('button', function (editor, uiName) {
+UE.registerUI('myblockquote0', function (editor, uiName) {
     //注册按钮执行时的command命令，使用命令默认就会带有回退操作
     editor.registerCommand(uiName, {
         execCommand: function () {
-            this.execCommand('insertHtml', `<div style="display: inline-block;padding: 8px 16px;border: 1px solid #ccc;border-radius: 5px">请放入链接</div>`);
+            this.execCommand('insertHtml', `<style>#my_btn:hover{background: red}</style><button id="my_btn" style="display: inline-block;outline:none;padding: 8px 16px;border: 1px solid #ccc;border-radius: 5px">请放入链接</button>`);
         }
     });
 
@@ -51,7 +51,7 @@ UE.registerUI('myblockquote', function (editor, uiName) {
 
     var btn = new UE.ui.Button({
         name: uiName,
-        title: '引用',
+        title: '整句引用',
         cssRules: "background-position: -220px 0;",
         onclick: function () {
             editor.execCommand(uiName);
