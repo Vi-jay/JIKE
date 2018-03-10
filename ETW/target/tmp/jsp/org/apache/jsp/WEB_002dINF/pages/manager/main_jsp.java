@@ -214,6 +214,7 @@ public final class main_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <el-menu-item index=\"1-6\">市场分析</el-menu-item>\n");
       out.write("                    <el-menu-item index=\"1-7\">网络布局</el-menu-item>\n");
       out.write("                    <el-menu-item index=\"1-8\">联系即客</el-menu-item>\n");
+      out.write("                    <el-menu-item index=\"1-9\">即客云电视</el-menu-item>\n");
       out.write("                </el-menu-item-group>\n");
       out.write("\n");
       out.write("\n");

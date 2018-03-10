@@ -200,7 +200,7 @@ public final class cloud_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <iframe src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("/editor/searchPage/4\" frameborder=\"0\" id=\"articleContent\"\n");
-      out.write("            style=\"width: 100%;overflow:hidden;transform: scale(0.9)\"></iframe>\n");
+      out.write("            style=\"width: 100%;overflow:hidden;\"></iframe>\n");
       out.write("</div>\n");
       out.write("\n");
       out.write("<footer>\n");

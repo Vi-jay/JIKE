@@ -1,0 +1,57 @@
+.left-menu-pannel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    overflow-y: hidden;
+    /*background: rgb(84, 92, 100);*/
+}
+
+.top-menu-pannel {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+
+}
+
+.el-menu--horizontal > li {
+    float: right !important;
+}
+
+#case-app .case-top-side {
+    padding: 15px 0 20px 20px;
+}
+
+#case-app .mark-red {
+    color: red;
+}
+
+#case-app .card-desc {
+    padding: 5px 10px 5px 18px;
+    background: #eee;
+    line-height: 20px;
+    margin-top: 12px;
+    color: #636363;
+}
+
+#case-app .card-icon {
+    min-height: 30px;
+    max-height: 50px;
+    max-width: 120px;
+    display: block;
+}
+
+#case-app .card-link {
+    font-size: 14px;
+    color: black;
+    margin-left: 5px;
+    text-decoration: none;
+
+}
+
+#case-app .card-link:hover {
+    text-decoration: underline;
+}

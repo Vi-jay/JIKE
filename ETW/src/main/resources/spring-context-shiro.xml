@@ -56,6 +56,7 @@
         <!-- perms[admin:manage]表示需要权限名称为admin:manage roles[admin]表示需要角色名为admin-->
         <property name="filterChainDefinitions">
             <value>
+                /client/**=anon
                 /manager/login=anon
                 /manager/layout=authc
                 /manager/main=authc

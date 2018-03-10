@@ -1,0 +1,116 @@
+#app {
+    margin: 72px auto;
+}
+
+.app-title {
+    font-size: 36px;
+    line-height: 40px;
+    color: #0a62a9;
+    text-align: center;
+    padding: 35px 0 40px 0;
+}
+
+.left-card-content, .right-card-content {
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+}
+
+
+
+.left-card-content {
+    float: left;
+    width: 54%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.left-card-desc {
+    padding: 5px 10px 5px 18px;
+    background: #eee;
+    line-height: 20px;
+    color: #636363;
+}
+
+.left-card-link {
+    font-size: 14px;
+    color: black;
+}
+
+.left-card-link:hover {
+    text-decoration: underline;
+}
+
+.left-card-title, .right-card-title {
+    color: #169cd4;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 8px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.right-card-title {
+    color: #9a0000;
+}
+
+.left-card-ul > li {
+    width: 48%;
+    margin-right: 4%;
+    float: left;
+}
+
+.left-card-ul > li:nth-child(even) {
+    margin-right: 0;
+}
+
+.right-card-content {
+    float: right;
+    width: 43%;
+}
+.mark-red{
+    color: red;
+}
+.li-icon-container{
+    display: inline-block;
+    width: 125px;
+    text-align: center;
+}
+.right-li-icon {
+    vertical-align: middle;
+    text-decoration: none;
+    outline: none;
+    min-height:30px ;
+    max-height: 50px;
+    max-width: 120px;
+}
+
+.right-li-legend {
+    font-size: 14px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.app-content {
+    margin: 30px auto 0 auto;
+    width: 70%;
+}
+
+.app-content:after {
+    content: "";
+    display: block;
+    clear: both;
+}@media (max-width: 768px) {
+    .left-card-content, .right-card-content {
+        width: 99%;
+    }
+    .left-card-ul > li {
+        width: 99%;
+
+    }
+    .app-content{
+        width: 82%;
+    }
+}
+

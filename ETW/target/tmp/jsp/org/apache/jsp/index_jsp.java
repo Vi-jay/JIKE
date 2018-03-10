@@ -216,8 +216,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <div class=\"news-area-inner-wrap\">\n");
       out.write("            <img src=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("/resource/css/index_files/etwservice-header-area_etw-nochinese.png\" width=\"1920\"\n");
-      out.write("                 height=\"243\" alt=\"\" class=\"img-responsive\">\n");
+      out.write("/resource/css/index_files/etwservice-header-area_etw-nochinese.png\" alt=\"\" class=\"img-responsive\">\n");
       out.write("        </div>\n");
       out.write("\n");
       out.write("    </div>\n");
@@ -313,7 +312,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("/client/page/marketing\"  title=\"\"><span class=\"icon\"><i\n");
       out.write("                                    class=\"fa fa-cubes\"></i></span><span class=\"link-info\">产品介绍</span></a></li>\n");
-      out.write("                            <li><a class=\"tvwrap\" href=\"#\"  title=\"\"><span class=\"icon\"><span\n");
+      out.write("                            <li><a class=\"tvwrap\" href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/client/page/cloudTV\"  title=\"\"><span class=\"icon\"><span\n");
       out.write("                                    class=\"etwtv\"></span></span><span class=\"link-info\">即客云电视</span></a></li>\n");
       out.write("                            <li><a href=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${path}", java.lang.String.class, (PageContext)_jspx_page_context, null));
@@ -336,7 +337,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("/client/report\"  title=\"\"><span class=\"icon\"><i\n");
       out.write("                                    class=\"fa fa-newspaper-o\"></i></span><span class=\"link-info\">公司动态</span></a></li>\n");
       out.write("                        </ul>\n");
-      out.write("                        <p class=\"ads-info text-center\">ETW所做的一切都能被证明，不能被证明的事物可以定义为假！</p>\n");
+      out.write("                        <p class=\"ads-info text-center\">即客所做的一切都能被证明，不能被证明的事物可以定义为假！</p>\n");
       out.write("                    </div>\n");
       out.write("                </div>\n");
       out.write("            </div>\n");
