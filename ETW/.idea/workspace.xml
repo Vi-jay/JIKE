@@ -21,27 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ehcache.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/ehcache.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-context-shiro.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="spring-context-shiro.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring-context-shiro.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -51,101 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditorController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/base/controller/EditorController.java">
+      <file leaf-file-name="mybatis-config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/base/controller/ClientController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-209">
-              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/base/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShiroHttpSession.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.2.3/shiro-web-1.2.3.jar!/org/apache/shiro/web/servlet/ShiroHttpSession.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-296">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1520226324906" expanded="true" signature="0:104" ph="/.../" />
-                <marker date="1520226324906" expanded="true" signature="152:735" ph="..." />
-                <marker date="1520226324906" expanded="true" signature="938:1098" ph="{...}" />
-                <marker date="1520226324906" expanded="false" signature="980:995" ph=" { " />
-                <marker date="1520226324906" expanded="false" signature="1008:1018" ph=" }" />
-                <marker date="1520226324906" expanded="false" signature="1055:1070" ph=" { " />
-                <marker date="1520226324906" expanded="false" signature="1082:1092" ph=" }" />
-                <marker date="1520226324906" expanded="true" signature="1192:1388" ph="{...}" />
-                <marker date="1520226324906" expanded="false" signature="1241:1256" ph=" { " />
-                <marker date="1520226324906" expanded="false" signature="1268:1278" ph=" }" />
-                <marker date="1520226324906" expanded="false" signature="1315:1330" ph=" { " />
-                <marker date="1520226324906" expanded="false" signature="1372:1382" ph=" }" />
-                <marker date="1520226324906" expanded="true" signature="1648:2097" ph="{...}" />
-                <marker date="1520226324906" expanded="false" signature="2130:2141" ph=" { " />
-                <marker date="1520226324906" expanded="false" signature="2161:2167" ph=" }" />
-                <marker date="1520226324906" expanded="true" signature="2203:2388" ph="{...}" />
-                <marker date="1520226324906" expanded="false" signature="2415:2426" ph=" { " />
-                <marker date="1520226324906" expanded="false" signature="2470:2476" ph=" }" />
-                <marker date="1520226324906" expanded="false" signature="2515:2526" ph=" { " />
-                <marker date="1520226324906" expanded="false" signature="2581:2587" ph=" }" />
-                <marker date="1520226324906" expanded="false" signature="2634:2645" ph=" { " />
-                <marker date="1520226324906" expanded="false" signature="2672:2678" ph=" }" />
-                <marker date="1520226324906" expanded="true" signature="2726:2917" ph="{...}" />
-                <marker date="1520226324906" expanded="true" signature="2959:3172" ph="{...}" />
-                <marker date="1520226324906" expanded="false" signature="3223:3234" ph=" { " />
-                <marker date="1520226324906" expanded="false" signature="3262:3268" ph=" }" />
-                <marker date="1520226324906" expanded="true" signature="3311:3496" ph="{...}" />
-                <marker date="1520226324906" expanded="false" signature="3534:3545" ph=" { " />
-                <marker date="1520226324906" expanded="false" signature="3573:3579" ph=" }" />
-                <marker date="1520226324906" expanded="true" signature="3621:4253" ph="{...}" />
-                <marker date="1520226324906" expanded="true" signature="4298:4658" ph="{...}" />
-                <marker date="1520226324906" expanded="true" signature="4439:4651" ph="{...}" />
-                <marker date="1520226324906" expanded="false" signature="4485:4504" ph=" { " />
-                <marker date="1520226324906" expanded="false" signature="4530:4544" ph=" }" />
-                <marker date="1520226324906" expanded="false" signature="4585:4604" ph=" { " />
-                <marker date="1520226324906" expanded="false" signature="4627:4641" ph=" }" />
-                <marker date="1520226324906" expanded="true" signature="4696:4931" ph="{...}" />
-                <marker date="1520226324906" expanded="true" signature="4983:5262" ph="{...}" />
-                <marker date="1520226324906" expanded="true" signature="5316:5597" ph="{...}" />
-                <marker date="1520226324906" expanded="true" signature="5648:5965" ph="{...}" />
-                <marker date="1520226324906" expanded="false" signature="6011:6022" ph=" { " />
-                <marker date="1520226324906" expanded="false" signature="6046:6052" ph=" }" />
-                <marker date="1520226324906" expanded="true" signature="6096:6341" ph="{...}" />
-                <marker date="1520226324906" expanded="false" signature="6380:6391" ph=" { " />
-                <marker date="1520226324906" expanded="false" signature="6415:6421" ph=" }" />
-                <marker date="1520226324906" expanded="true" signature="6452:6621" ph="{...}" />
-                <marker date="1520226324906" expanded="true" signature="6650:6835" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyRealm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/base/realm/MyRealm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="115" column="40" lean-forward="false" selection-start-line="115" selection-start-column="40" selection-end-line="115" selection-end-column="40" />
+            <state relative-caret-position="-134">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -154,8 +44,82 @@
       <file leaf-file-name="spring-context.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring-context.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="19" column="113" lean-forward="false" selection-start-line="19" selection-start-column="113" selection-end-line="19" selection-end-column="113" />
+            <state relative-caret-position="216">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-context-ehcache.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-context-ehcache.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-context-db.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-context-db.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+              <folding>
+                <element signature="e#1557#1571#0" expanded="true" />
+                <element signature="e#1615#1634#0" expanded="true" />
+                <element signature="e#1678#1697#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ueditor.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="438" column="35" lean-forward="false" selection-start-line="438" selection-start-column="35" selection-end-line="438" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/jsp/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="100" column="78" lean-forward="false" selection-start-line="100" selection-start-column="73" selection-end-line="100" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -249,9 +213,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/ueditor/addButton.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resource/js/manager/lib/routerConfig.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resource/js/utils.es6" />
         <option value="$PROJECT_DIR$/src/main/java/com/base/dao/ReportMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/base/Bean/Datagrid.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/base/service/ClientService.java" />
@@ -272,7 +233,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/client/marketing.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/js/asd.vue" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/client/report.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/ueditor/jsp/config.json" />
         <option value="$PROJECT_DIR$/src/main/webapp/ueditor/jsp/controller.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.config.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manager/login.jsp" />
@@ -295,11 +255,15 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/base/dao/xml/PagesMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/base/dao/xml/ReportMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-context.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/ehcache.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/base/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-context-shiro.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-context-ehcache.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-context-db.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/ueditor/jsp/config.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
       </list>
     </option>
   </component>
@@ -521,6 +485,40 @@
             <path>
               <item name="ETW" type="b2602c69:ProjectViewProjectNode" />
               <item name="ETW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="ueditor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ETW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ETW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="ueditor" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ETW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ETW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="ueditor" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ETW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ETW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ETW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ETW" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -560,11 +558,11 @@
       <recent name="com.base.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resource/css/index_files" />
       <recent name="$PROJECT_DIR$/src/main/webapp/ueditor/themes/default/images" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resource/image" />
       <recent name="$PROJECT_DIR$/src/main/java/com/base/dao" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/base/dao/pojo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.base.exception" />
@@ -717,12 +715,12 @@
       <workItem from="1520590984597" duration="10739000" />
       <workItem from="1520607372871" duration="432000" />
       <workItem from="1520609399556" duration="30000" />
-      <workItem from="1520644162306" duration="9778000" />
+      <workItem from="1520644162306" duration="12209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162682000" />
+    <option name="totallyTimeSpent" value="165113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="23" y="55" width="1264" height="745" extended-state="0" />
@@ -807,43 +805,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/jsp/controller.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/jsp/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/toolsEx.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/manager/aboutUs.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5460">
-          <caret line="364" column="0" lean-forward="false" selection-start-line="364" selection-start-column="0" selection-end-line="364" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/manager/lib/aboutUs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1060,14 +1021,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1669">
-          <caret line="438" column="35" lean-forward="false" selection-start-line="438" selection-start-column="35" selection-end-line="438" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/toolsEx.es6">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -1214,14 +1167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/base/dao/xml/ReportMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1254,14 +1199,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="19" column="113" lean-forward="false" selection-start-line="19" selection-start-column="113" selection-end-line="19" selection-end-column="113" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ehcache.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1282,14 +1219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3447">
           <caret line="2" column="120" lean-forward="true" selection-start-line="2" selection-start-column="120" selection-end-line="2" selection-end-column="120" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1379,8 +1308,40 @@
         <state relative-caret-position="266">
           <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="100" column="78" lean-forward="false" selection-start-line="100" selection-start-column="73" selection-end-line="100" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-context-ehcache.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1388,6 +1349,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="42" column="47" lean-forward="false" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-context-db.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+          <folding>
+            <element signature="e#1557#1571#0" expanded="true" />
+            <element signature="e#1615#1634#0" expanded="true" />
+            <element signature="e#1678#1697#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="438" column="35" lean-forward="false" selection-start-line="438" selection-start-column="35" selection-end-line="438" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/jsp/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding />
         </state>
       </provider>
