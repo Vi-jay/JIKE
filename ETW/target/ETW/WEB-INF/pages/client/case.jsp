@@ -56,10 +56,10 @@
         <article class="left-card-content">
             <h2 class="left-card-title">即客数据管理<br>能实现对所有商户、客户数据的分析管理</h2>
             <ul class="left-card-ul">
-                <c:forEach var="case" items="${caseList}">
+                <c:forEach var="caseModel" items="${caseList}">
                     <li>
-                        <a href="${case.link}" class="left-card-link">${case.name}</a>
-                        <p class="left-card-desc" v-html="markedNumberRed('${case.desc}')">
+                        <a href="${caseModel.link}" class="left-card-link">${caseModel.name}</a>
+                        <p class="left-card-desc" v-html="markedNumberRed('${caseModel.desc}')">
                         </p>
                     </li>
                 </c:forEach>
@@ -68,12 +68,12 @@
         <article class="right-card-content">
             <h2 class="right-card-title">即客数据营销<br>有数据支撑的营销才有资格说精准</h2>
             <ul>
-                <c:forEach var="case" items="${caseList}">
+                <c:forEach var="caseModel" items="${caseList}">
                     <li>
-                        <a href="${case.link}" class="li-icon-container">
-                            <img class="right-li-icon" src="${case.icon}" alt="${case.name}">
+                        <a href="${caseModel.link}" class="li-icon-container">
+                            <img class="right-li-icon" src="${caseModel.icon}" alt="${caseModel.name}">
                         </a>
-                        <a class="right-li-legend" href="${case.link}">${case.name}</a>
+                        <a class="right-li-legend" href="${caseModel.link}">${caseModel.name}</a>
                     </li>
                 </c:forEach>
             </ul>
