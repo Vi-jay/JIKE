@@ -3,6 +3,7 @@ package com.base.controller;
 import com.base.dao.pojo.User;
 import com.base.exception.SystemException;
 import com.base.service.UserService;
+import com.wordnik.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
@@ -49,7 +50,7 @@ public class LoginController {
     /**
      * 管理系统页面跳转
      */
-    @RequestMapping({"/action.do"})
+    @RequestMapping("/action")
     public String go(HttpServletRequest request, ModelMap model) {
         String path = null;
         for (Object paramName : request.getParameterMap().keySet()) {

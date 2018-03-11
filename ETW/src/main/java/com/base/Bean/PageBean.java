@@ -1,7 +1,13 @@
-package com.base.Bean;
+package com.base.bean;
 
+import com.wordnik.swagger.annotations.ApiModel;
+import com.wordnik.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "页码模型")
 public class PageBean {
+    @ApiModelProperty(value = "每页数量")
     private int pageSize;
+    @ApiModelProperty(value = "页码")
     private int pageNum;
 
     public PageBean() {

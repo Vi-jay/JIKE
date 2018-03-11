@@ -38,6 +38,7 @@
         <url-pattern>*.jpg</url-pattern>
         <url-pattern>*.png</url-pattern>
         <url-pattern>*.gif</url-pattern>
+        <url-pattern>*.html</url-pattern>
     </servlet-mapping>
 
     <!-- 解决乱码问题 -->
@@ -90,18 +91,18 @@
     <!--错误页面-->
     <error-page>
         <exception-type>java.lang.Exception</exception-type>
-        <location>/manager/action.do?path=error</location>
+        <location>/manager/action?path=error</location>
     </error-page>
     <error-page>
         <error-code>404</error-code>
-        <location> <![CDATA[ /manager/action.do?path=error&errorCode=404 ]]> </location>
+        <location> <![CDATA[ /manager/action?path=error&errorCode=404 ]]> </location>
     </error-page>
     <error-page>
         <error-code>505</error-code>
-        <location> <![CDATA[ /manager/action.do?path=error&errorCode=500  ]]> </location>
+        <location> <![CDATA[ /manager/action?path=error&errorCode=500  ]]> </location>
     </error-page>
     <error-page>
         <exception-type>java.lang.NullPointerException</exception-type>
-        <location>/manager/action.do?path=error</location>
+        <location>/manager/action?path=error</location>
     </error-page>
 </web-app>

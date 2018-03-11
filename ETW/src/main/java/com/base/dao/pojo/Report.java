@@ -1,12 +1,18 @@
 package com.base.dao.pojo;
 
-import java.util.Date;
+import com.wordnik.swagger.annotations.ApiModel;
+import com.wordnik.swagger.annotations.ApiModelProperty;
 
+import java.util.Date;
+@ApiModel(value ="")
 public class Report {
+    @ApiModelProperty(value = "")
     private Integer id;
 
+    @ApiModelProperty(value = "")
     private Date date;
 
+    @ApiModelProperty(value = "0/1  视频/随时动态")
     private Integer state;
 
     public Integer getId() {

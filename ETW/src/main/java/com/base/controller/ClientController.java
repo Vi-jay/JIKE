@@ -1,14 +1,16 @@
 package com.base.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.base.Bean.Datagrid;
-import com.base.Bean.PageBean;
+import com.base.bean.Datagrid;
+import com.base.bean.PageBean;
 import com.base.code.Ret;
 import com.base.code.RetCode;
 import com.base.dao.pojo.Case;
 import com.base.dao.pojo.Report;
 import com.base.dao.pojo.ReportWithBLOBs;
 import com.base.service.ClientService;
+import com.wordnik.swagger.annotations.ApiOperation;
+import com.wordnik.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -17,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-@RequestMapping("client")
+@RequestMapping("/client")
 @Controller
 public class ClientController {
     @Autowired
@@ -35,13 +37,6 @@ public class ClientController {
         return "client/case";
     }
 
-    @RequestMapping(value = "listCases", method = RequestMethod.POST, produces = {"application/json;charset=utf-8"})
-    @ResponseBody
-    public Object getCaseList(@RequestBody PageBean pageBean) {
-        Datagrid datagrid = clientService.selectCasesListAndPage(pageBean.getPageNum(), pageBean.getPageSize());
-        return JSONObject.toJSON(datagrid);
-    }
-
     @RequestMapping(value = "updateCase", produces = {"application/json;charset=utf-8"})
     @ResponseBody
     public Object updateCase(@RequestBody Case caseModel) {
@@ -49,6 +44,13 @@ public class ClientController {
         RetCode code = RetCode.SUCCESS;
         if (i < 0) code = RetCode.ERROR;
         return new Ret(code);
+    }
+    @ResponseBody
+    @RequestMapping(value = "/listCases", method = RequestMethod.POST, produces = {"application/json;charset=utf-8"})
+    @ApiOperation(value = "查找所有案例", httpMethod = "POST", response = Case.class, notes = "listCases")
+    public String getCaseList( @ApiParam(required = true, name = "PageBean", value = "pageBean") @RequestBody PageBean pageBean) {
+        Datagrid datagrid = clientService.selectCasesListAndPage(pageBean.getPageNum(), pageBean.getPageSize());
+        return JSONObject.toJSONString(datagrid);
     }
 
     @RequestMapping(value = "addCase", produces = {"application/json;charset=utf-8"})
@@ -101,7 +103,8 @@ public class ClientController {
 
     @RequestMapping(value = "listReports", method = RequestMethod.POST, produces = {"application/json;charset=utf-8"})
     @ResponseBody
-    public Object getReportList(@RequestBody PageBean pageBean) {
+    @ApiOperation(value = "获取所有公司动态",response = Datagrid.class,httpMethod = "POST")
+    public Object getReportList(@ApiParam(required = true) @RequestBody PageBean pageBean) {
         Datagrid datagrid = clientService.selectReportsListAndPage(pageBean.getPageNum(), pageBean.getPageSize());
         return JSONObject.toJSON(datagrid);
     }

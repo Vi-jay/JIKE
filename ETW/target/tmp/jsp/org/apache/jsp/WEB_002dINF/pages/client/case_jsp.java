@@ -347,7 +347,7 @@ public final class case_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_forEach_0.setPageContext(_jspx_page_context);
     _jspx_th_c_forEach_0.setParent(null);
-    _jspx_th_c_forEach_0.setVar("case");
+    _jspx_th_c_forEach_0.setVar("caseModel");
     _jspx_th_c_forEach_0.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${caseList}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
     int[] _jspx_push_body_count_c_forEach_0 = new int[] { 0 };
     try {
@@ -357,12 +357,12 @@ public final class case_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\n");
           out.write("                    <li>\n");
           out.write("                        <a href=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${case.link}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${caseModel.link}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("\" class=\"left-card-link\">");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${case.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${caseModel.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("</a>\n");
           out.write("                        <p class=\"left-card-desc\" v-html=\"markedNumberRed('");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${case.desc}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${caseModel.desc}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("')\">\n");
           out.write("                        </p>\n");
           out.write("                    </li>\n");
@@ -394,7 +394,7 @@ public final class case_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_1 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_forEach_1.setPageContext(_jspx_page_context);
     _jspx_th_c_forEach_1.setParent(null);
-    _jspx_th_c_forEach_1.setVar("case");
+    _jspx_th_c_forEach_1.setVar("caseModel");
     _jspx_th_c_forEach_1.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${caseList}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
     int[] _jspx_push_body_count_c_forEach_1 = new int[] { 0 };
     try {
@@ -404,19 +404,19 @@ public final class case_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\n");
           out.write("                    <li>\n");
           out.write("                        <a href=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${case.link}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${caseModel.link}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("\" class=\"li-icon-container\">\n");
           out.write("                            <img class=\"right-li-icon\" src=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${case.icon}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${caseModel.icon}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("\" alt=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${case.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${caseModel.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("\">\n");
           out.write("                        </a>\n");
           out.write("                        <a class=\"right-li-legend\" href=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${case.link}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${caseModel.link}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write('"');
           out.write('>');
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${case.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${caseModel.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("</a>\n");
           out.write("                    </li>\n");
           out.write("                ");

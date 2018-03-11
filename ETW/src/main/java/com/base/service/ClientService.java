@@ -1,6 +1,6 @@
 package com.base.service;
 
-import com.base.Bean.Datagrid;
+import com.base.bean.Datagrid;
 import com.base.dao.CaseMapper;
 import com.base.dao.ReportMapper;
 import com.base.dao.pojo.Case;
