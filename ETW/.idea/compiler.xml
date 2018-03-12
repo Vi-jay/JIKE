@@ -11,7 +11,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ETW" target="1.5" />
-      <module name="mybatis-generator-oracle" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
