@@ -1,5 +1,7 @@
 package com.base.bean;
 
+import com.base.dao.pojo.ReportWithBLOBs;
+
 import java.util.ArrayList;
 import java.util.List;
 

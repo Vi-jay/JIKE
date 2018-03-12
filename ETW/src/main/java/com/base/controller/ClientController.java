@@ -103,8 +103,9 @@ public class ClientController {
 
     @RequestMapping(value = "listReports", method = RequestMethod.POST, produces = {"application/json;charset=utf-8"})
     @ResponseBody
-    @ApiOperation(value = "获取所有公司动态",response = Datagrid.class,httpMethod = "POST")
+    @ApiOperation(value = "获取所有公司动态", httpMethod = "POST", response = Datagrid.class)
     public Object getReportList(@ApiParam(required = true) @RequestBody PageBean pageBean) {
+
         Datagrid datagrid = clientService.selectReportsListAndPage(pageBean.getPageNum(), pageBean.getPageSize());
         return JSONObject.toJSON(datagrid);
     }
