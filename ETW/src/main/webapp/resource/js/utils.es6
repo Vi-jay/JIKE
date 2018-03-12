@@ -7,7 +7,7 @@
                     "d+": this.getDate(),                    //日
                     "h+": this.getHours(),                   //小时
                     "m+": this.getMinutes(),                 //分
-                    "s+": this.getSeconds(),                 //秒
+                    "s+": this.getSeconds(),            //秒
                     "q+": Math.floor((this.getMonth() + 3) / 3), //季度
                     "S": this.getMilliseconds()             //毫秒
                 };
@@ -21,7 +21,7 @@
                 }
                 return fmt;
             }
-
+ 
             return dateFmt.apply(date);
         }
     };
